@@ -44,3 +44,5 @@ and most variables can be found here.
 
 mkpar.c enables the user to fill the parameter tables for each cell
 class in terms of individual channel kinetic properties.
+
+Version: 20111007 This version contains changes in the sublink.c file.

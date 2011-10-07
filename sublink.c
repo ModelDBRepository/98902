@@ -80,6 +80,8 @@ int main(int argc, char  *argv[])
     	             return 3;
    }
 
+ srandom((unsigned)atoi(argv[3]));
+
  if((nodefile=fopen(strcat(strcpy(name,argv[1]),".node"),"r"))==NULL)
   {fprintf(stderr, "Can't open %s file\n",name);return 1;}
  fscanf(nodefile,"%d",&lrodz);
@@ -467,9 +469,10 @@ int main(int argc, char  *argv[])
      fprintf(cfg,"%lu\n",nsyn[ifile]);
      fprintf(cfg,"%s\n",fname);
      fprintf(cfg,"%d\n",Nneu);
+     histoint=1;            /* Point to readjust sampling interval for histograms (1=1000 Hz / 10=100 Hz) */
      fprintf(cfg,"%d,%d\n",Nneu,histoint);
      fprintf(cfg,"0\n");
-     fprintf(cfg,"0.000010"); /* Point to readjust lambda!!! */
+     fprintf(cfg,"0.00002"); /* Point to readjust lambda!!! (2 Hz) */
      fclose(cfg);
  }
 
