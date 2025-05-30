@@ -26,9 +26,9 @@ Currently I'm (Stan Anderson) running it on a 32-bit 16-node cluster, also runni
 
 - **mkpar.c** enables the user to fill the parameter tables for each cell class in terms of individual channel kinetic properties.
 
+---
 Version: 20111007
 This version contains changes in the sublink.c file.
 
----
-
-2025-05-30: Standardized to Markdown
+20250530
+Standardized to Markdown.
